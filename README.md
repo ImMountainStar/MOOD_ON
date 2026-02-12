@@ -232,9 +232,8 @@
 
 ## 🎬 시연 영상
 
-<video src="https://raw.githubusercontent.com/ImMountainStar/MOOD_ON/1d193f89d217fbf604b479b85649a4e8daad9adc/%EC%82%B0%EC%B6%9C%EB%AC%BC/moodon-%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81.mp4"
-controls width="800">
-</video>
+👉 [시연영상 보러가기](https://drive.google.com/file/d/1-qSSbeupVFnMLRqk-OgZ-P_xRg5Hvw2e/view?usp=drive_link)
+
 
 <br>
 <br>
