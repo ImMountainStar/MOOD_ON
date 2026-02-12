@@ -31,7 +31,7 @@
 ### 팀원 소개
 |[@김주영](https://github.com/samkim7788) | [@성기혁](https://github.com/venus241004) | [@양정민](https://github.com/Yangmin3) | [@이가은](https://github.com/Leegaeune) | [@임산별](https://github.com/ImMountainStar) |[@주수빈](https://github.com/Subin-Ju)|
 |----------------------|----------------------|----------------------|----------------------|-----------------------|----------------------|
-| <img src="readme_image/profile/김주영.jpg" width="150" height="150" /> | <img src="readme_image/profile/성기혁.jpg" width="150" height="150"> | <img src="readme_image/profile/양정민.jpg" width="150" height="150"> | <사진> | <사진> | <img src="readme_image/profile/주수빈.jpg" width="150" height="150"> |
+
 
 <br>
 <br>
@@ -168,19 +168,104 @@ MOOD ON 서비스의 타겟 소비자는 바로 개성과 감성을 중시하는
 <br>
 
 # 데이터 설계
+<img width="1230" height="1212" alt="image" src="https://github.com/user-attachments/assets/d5eb1c08-5bee-4d1d-8be4-bcff24ecf486" />
 
 <br>
 <br>
 
 # 기능 및 화면 설계
+#### 서비스 기능 Flow 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/44f6e57b-3620-4108-9374-6b3f9132df56" />
+
+
+#### 화면설계 
+<img width="677" height="365" alt="image" src="https://github.com/user-attachments/assets/8ec01bae-21c9-495c-af0a-65b3c91a955a" />
 
 <br>
 <br>
 
 # AI/추천 시스템 설계
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6b9848dd-1df7-4ae8-bb6a-9f849dea32cd" />
+
+## 모델 선정
+좋아.
+**완전히 그대로 README에 붙여넣어도 되는 최종 Markdown**으로 다시 정리해서 줄게.
+(불필요 문장 / 설명 / 대화톤 전부 제거)
+
+---
+
+## 모델 선정
+
+### 모델 선정 기준
+
+* 한국어 질의 응답 정확도
+* RAG 결합 시 응답 안정성
+* Hallucination 최소화 수준
+* 이미지 기반 무드 및 소재 인식 성능
+* 추천 서비스 적용 가능성
+
+---
+
+### 최종 선정 모델
+
+| 구분  | 모델                     |
+| --- | ---------------------- |
+| LLM | Qwen2.5-14B-Korean     |
+| VLM | Qwen2.5-VL-7B-Instruct |
+
+---
+
+### LLM 선정 근거
+
+* 한국어 문맥 이해 성능 우수
+* RAG 환경에서 응답 안정성 확보
+* Hallucination 발생 최소 수준
+* 응답 속도 안정성 확보
+
+---
+
+### VLM 선정 근거
+
+* 소재 / 질감 / 색감 인식 성능 우수
+* 이미지 기반 무드 해석 가능
+* 텍스트 설명 생성 품질 안정성
+* 추천 서비스 적용 적합성
+
+---
+
+## 모델 성능 평가
+
+### 평가 방식
+
+* 사용자 텍스트 + 이미지 입력 기반 평가
+* RAG 검색 + 이미지 무드 추출 결합 평가
+* 실제 추천 시나리오 기반 테스트
+
+---
+
+### 성능 평가 결과
+
+| 평가 항목         | 결과                     |
+| ------------- | ---------------------- |
+| 텍스트 검색 유사도    | 평균 cosine ≈ 0.59       |
+| RAG 응답 안정성    | PASS                   |
+| 이미지-텍스트 맥락 연결 | 우수                     |
+| 무드 / 스타일 반영   | 우수                     |
+| 평균 응답 시간      | 35~45s (g6e.xlarge 기준) |
+
+---
+
+### 최종 선정 결과
+
+* 한국어 기반 추천 응답 안정성 확보
+* 이미지 기반 무드 해석 성능 확보
+* 멀티모달 추천 서비스 적용 가능성 검증
+
+
 
 <br>
 <br>
+
 
 # 프로젝트 개선 노력
 
@@ -188,14 +273,10 @@ MOOD ON 서비스의 타겟 소비자는 바로 개성과 감성을 중시하는
 <br>
 
 # 수행 결과 및 시연 영상
+## 평가 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2a90978c-e9fd-4f31-bab0-27405c0d0249" />
+
 
 <br>
 <br>
 
-# 한 줄 회고
-- 김주영: 
-- 성기혁:
-- 양정민: 
-- 이가은: 
-- 임산별: 
-- 주수빈: 
